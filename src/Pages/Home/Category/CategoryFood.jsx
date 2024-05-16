@@ -7,14 +7,19 @@ import slide_2 from "../../../assets/home/slide2.jpg";
 import slide_3 from "../../../assets/home/slide3.jpg";
 import slide_4 from "../../../assets/home/slide4.jpg";
 import slide_5 from "../../../assets/home/slide5.jpg";
+import SectionTitle from "../../../Components/sectionTitle/SectionTitle";
 
 const CategoryFood = () => {
   return (
-    <div>
+    <section className="max-w-screen-lg mx-auto">
+      <SectionTitle  subTitle= {'From 11:00 AM to 10:00 PM'}
+         title= {'Order Online'}>
+        
+      </SectionTitle>
       <Swiper
         slidesPerView={4}
         spaceBetween={30}
-        centeredSlides={true}
+        // centeredSlides={true}
         pagination={{
           clickable: true,
         }}
@@ -42,7 +47,7 @@ const CategoryFood = () => {
           <p className="uppercase -mt-12 text-white text-xl font-bold text-center">Salad</p>
         </SwiperSlide>
       </Swiper>
-    </div>
+    </section>
   );
 };
 
