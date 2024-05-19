@@ -1,6 +1,7 @@
 import { Parallax } from 'react-parallax';
 
-const Cover = ({img}) => {
+
+const Cover = ({img, coverTitle, coverDiscrip}) => {
 
 
   return (
@@ -12,22 +13,19 @@ const Cover = ({img}) => {
     strength={-200}
 >
 <div
-      className="hero h-[500px]"
+      className="hero h-[500px] "
     //   style={{
     //     backgroundImage:
     //       `url("${img}")`,
     //   }}
     >
-      <div className="hero-overlay bg-opacity-60"></div>
+      <div className=" "></div>
       <div className="hero-content text-center text-neutral-content">
-        <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+        <div className="max-w-xl px-32 py-14 bg-black bg-opacity-60 text-white">
+          <h1 className="mb-5 text-4xl font-semibold uppercase">{coverTitle}</h1>
           <p className="mb-5">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+           {coverDiscrip}
           </p>
-          <button className="btn btn-primary">Get Started</button>
         </div>
       </div>
     </div>
