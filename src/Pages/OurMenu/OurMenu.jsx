@@ -27,27 +27,27 @@ const OurMenu = () => {
 
       <Cover img={menuImg} coverTitle={'OUR MENU'} coverDiscrip={'Would you like to try a dish.'}></Cover>
       <SectionTitle subTitle={"Don't miss"} title={"Todays Offers"}></SectionTitle>
-      <CategoryMenu items={offered}></CategoryMenu>
+      <CategoryMenu items={offered} title={'offered'}></CategoryMenu>
 
       {/* dessert item */}
       <Cover img={dessertImg} coverTitle={'Dessert'} coverDiscrip={'This is an treditional dessert item. We strongly recommended to try it.'}></Cover>
-      <CategoryMenu items={dessert} ></CategoryMenu>
+      <CategoryMenu items={dessert} title={'dessert'} ></CategoryMenu>
 
       {/* pizza items */}
 
-      <Cover img={pizzaImg} coverTitle={'Pizza'} coverDiscrip={"We have lot's of varient pizza like italian, mexican, american. You can try anyone."}></Cover>
-      <CategoryMenu items={pizza}></CategoryMenu>
+      <Cover img={pizzaImg} coverTitle={'Pizza'}  coverDiscrip={"We have lot's of varient pizza like italian, mexican, american. You can try anyone."}></Cover>
+      <CategoryMenu items={pizza} title={'pizza'}></CategoryMenu>
      
      {/* salad items  */}
 
      <Cover img={saladImg} coverTitle={'Salad'} coverDiscrip={"Hey dude, take me and meke you the hapyest person of tghe persion "}></Cover>
-     <CategoryMenu items={salad}></CategoryMenu>
+     <CategoryMenu items={salad} title={'salad'}></CategoryMenu>
 
      {/* soup items */}
 
      <Cover img={soupImg} coverTitle={'Soup'} coverDiscrip={"There we have lot's of varient soups. like Thai , Japaniz, India ets. "}></Cover>
 
-     <CategoryMenu items={soup}></CategoryMenu>
+     <CategoryMenu items={soup} title={'soup'}></CategoryMenu>
 
     </div>
   );

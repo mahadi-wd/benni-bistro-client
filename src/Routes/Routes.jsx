@@ -2,7 +2,10 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home";
 import OurMenu from "../Pages/OurMenu/OurMenu";
-import ShowAllMenu from "../Pages/ShowAllMenu/ShowAllMenu";
+
+import DashBoard from "../Pages/dashBoard/DashBoard";
+import OurShope from "../Pages/OurShope/OurShope";
+
 
 export const router = createBrowserRouter([
     {
@@ -18,8 +21,12 @@ export const router = createBrowserRouter([
           element: <OurMenu></OurMenu>
         },
         {
-          path: '/showAllMenu',
-          element: <ShowAllMenu></ShowAllMenu>
+          path: '/ourShope/:category',
+          element: <OurShope></OurShope>
+        },
+        {
+          path: '/dashBoard',
+          element: <DashBoard></DashBoard>
         }
       ]
     },
