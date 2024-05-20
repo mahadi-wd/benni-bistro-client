@@ -5,6 +5,7 @@ import OurMenu from "../Pages/OurMenu/OurMenu";
 
 import DashBoard from "../Pages/dashBoard/DashBoard";
 import OurShope from "../Pages/OurShope/OurShope";
+import Login from "../Pages/login/Login";
 
 
 export const router = createBrowserRouter([
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
         {
           path: '/dashBoard',
           element: <DashBoard></DashBoard>
+        },
+        {
+          path: '/login',
+          element: <Login></Login>
         }
       ]
     },
